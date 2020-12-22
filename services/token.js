@@ -1,25 +1,49 @@
-var jwt = require('jsonwebtoken');
+const jwt = require('jsonwebtoken');
 const models = require('../models');
 
+const checkToken = async(token) =>{
+    let localId = null;
+    try {
+        const { id } = decode(token);
+        localId = id;
+    } catch (error) {
+        
+    }
+    const user = await models.user.findOne({where:{
+        id: localId,
+        estado: 1
+    }});
+
+    if(user){
+        const token = encode(user);
+        return{
+            token: token,
+            rol: user.rol
+        }
+    }else{
+        return false
+    }
+}
 
 module.exports = {
-
-    //generar el token
-    encode: async(id, rol) => {
+    encode: async(user) =>{
         const token = jwt.sign({
-            id: id,
-            rol: rol,
+            id: user.id,
+            name: user.name,
+            email: user.email,
+            rol: user.rol,
+            status: user.estado,
+            createdAt: user.createdAt
         }, 'config.secret',{
             expiresIn: 8400
         });
 
         return token;
     },
-    //permite decodificar el token
-    decode: async(token) => {
+    decode: async(token) =>{
         try {
             const { id } = await jwt.verify(token, 'config.secret');
-            const user = await models.Usuario.findOne({where:{
+            const user = await models.user.findOne({where:{
                 id: id,
             }});
 
@@ -28,7 +52,7 @@ module.exports = {
             }else{
                 return false;
             }
-        } catch (e) {
+        } catch (error) {
             const newToken = await checkToken(token);
             return newToken
         }

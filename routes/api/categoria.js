@@ -1,7 +1,7 @@
-const routerx = require('express-promise-router');
+const router = require('express').Router();
 const categoriaController = require('../../controllers/CategoriaController.js');
+const auth = require('../../middlewares/auth.js');
 
-const router = routerx();
 
 // Route Api - categoria - list 
 router.get('/list', categoriaController.list);
