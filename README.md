@@ -41,7 +41,21 @@ La siguiente sección deberá contar con los servicios que la empresa ofrece, es
 </p>
 
 Se deberá implementar una sección inferior donde creen algunos casos de éxito o testimonios de las soluciones que ustedes ofrecen, donde con una foto, un texto y el nombre de la persona y/o empresa, van a referenciar porque su solución fue exitosa.
+
+<p align="center">
+  <img src="https://iili.io/KSUYib.png" width="700"/>
+</p>
+
+<p align="center">
+  <img src="https://iili.io/KSU7Wu.png" width="700"/>
+</p>
+
 Finalmente debe contar con un footer donde deberá estar toda la información de contacto, que podrían ser un par de correos electrónicos, las diferentes ciudades donde trabajan, un teléfono y celular (no utilizar números telefónicos reales), también contener un enlace al repositorio del proyecto final de github, el repositorio debe ser público.
+
+
+<p align="center">
+  <img src="https://iili.io/KSU5xe.png" width="700"/>
+</p>
 
 El desarrollo de la landing page se implementa apartir de la plantilla Biziness encontrada en <https://plantillashtmlgratis.com/todas-las-plantillas/plantilla/plantilla-web-gratis-biziness/>
 
