@@ -57,9 +57,21 @@ El desarrollo de la landing page se implementa apartir de la plantilla Biziness 
 
 ## Zona de Gestión
 El backend o la zona de gestión, deberá contar con la administración de los servicios que se van a visualizar en el sitio web principal o Portafolio de Servicios, Los nombres de las rutas, componentes y demás aspectos técnicos están definidos en la sección requisitos obligatorios estructura backend.
+
+<p align="center">
+  <img src="https://iili.io/KSUhWg.png" width="700"/>
+</p>
+
 El backend implementará el módulo de autenticación realizado en la semana 3 para validar los usuarios y sus roles, la zona de administración debe contar inicialmente con la gestión o CRUD de Artículos y Categorías (como dos elementos de nombre genérico independiente del servicios que se vaya a implementar) y posteriormente se implementará la gestión de usuarios allí mismo. Para el manejo de rutas, se debe implementar el router-view con el fin de sacar provecho del poder de Vue y su característica de SPA. El back deberá proveer una API que permitirá realizar las diferentes peticiones a sus componentes desde el landing page
 
 
+<p align="center">
+  <img src="https://iili.io/KSUO0v.png" width="700"/>
+</p>
 
+
+<p align="center">
+  <img src="https://iili.io/KSUt72.png" width="700"/>
+</p>
 
 
