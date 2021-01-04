@@ -7,6 +7,13 @@ Este proyecto consta de una parte de investigación en donde se hace una suposic
   <img src="https://iili.io/KSSeA7.png" width="700"/>
 </p>
 
+### Pagina Bienvenida Usuario
+
+Al iniciar sesion correctamente, se redirije a una pagina de bienvenida, donde se muetsra el nombre, email, fecha de registro del usuario.
+
+<p align="center">
+  <img src="https://iili.io/KSS4Kx.png" width="700"/>
+</p>
 
 ## Portafolio de servicios
 
