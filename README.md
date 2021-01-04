@@ -27,12 +27,16 @@ Una sección siguiente donde, de acuerdo a la información de su reto, describan
 La siguiente sección deberá contar con los servicios que la empresa ofrece, estos servicios deben ser gestionados desde el backend del proyecto y deberán contar con un nombre o título, imagen acorde al tipo de servicio o producto y una descripción del mismo. Se recomienda crear una página independiente donde puedan detallar la investigación que se hizo acerca del producto y una mejor descripción de lo que ofrecerían o de la tecnología que utilizan en el servicio o producto ofertado.
 
 <p align="center">
-  <img src="https://iili.io/KSSyKv.png" width="700"/>
+  <img src="https://iili.io/KSUqVs.png" width="700"/>
 </p>
 
 <p align="center">
-  <img src="https://iili.io/KSSyKv.png" width="700"/>
+  <img src="https://iili.io/KSUfxn.png" width="700"/>
 </p>
+
+https://iili.io/KSUqVs.png
+https://iili.io/KSUfxn.png
+https://iili.io/KSUFDX.png
 Se deberá implementar una sección inferior donde creen algunos casos de éxito o testimonios de las soluciones que ustedes ofrecen, donde con una foto, un texto y el nombre de la persona y/o empresa, van a referenciar porque su solución fue exitosa.
 Finalmente debe contar con un footer donde deberá estar toda la información de contacto, que podrían ser un par de correos electrónicos, las diferentes ciudades donde trabajan, un teléfono y celular (no utilizar números telefónicos reales), también contener un enlace al repositorio del proyecto final de github, el repositorio debe ser público.
 
