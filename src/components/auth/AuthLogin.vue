@@ -95,7 +95,7 @@ export default {
     loginUser() {
       if (this.validateForm()) {
          // Add (POST)
-        axios.post('http://localhost:3000/api/usuario/login',{
+        axios.post('/api/usuario/login',{
             'email': this.login.email.value,
             'password': this.login.password.value,
         })

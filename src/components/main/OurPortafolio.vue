@@ -73,7 +73,7 @@ export default {
   methods: {
     listCategories() {
       axios
-        .get("http://localhost:3000/api/categoria/list")
+        .get("/api/categoria/list")
         .then((response) => {
           this.categorias = response.data;
         })
@@ -84,7 +84,7 @@ export default {
 	
     listServices() {
       axios
-        .get("http://localhost:3000/api/articulo/list")
+        .get("/api/articulo/list")
         .then((response) => {
           this.servicios = response.data;
         })

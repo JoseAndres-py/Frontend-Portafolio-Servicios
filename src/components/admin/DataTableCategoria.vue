@@ -134,8 +134,6 @@
   </v-main>
 </template>
 <script>
-import axios from "axios";
-import Axios from "axios";
 
 export default {
   data: () => ({
@@ -189,7 +187,7 @@ export default {
   methods: {
     list() {
       axios
-        .get("http://localhost:3000/api/categoria/list")
+        .get("/api/categoria/list")
         .then((response) => {
           this.categorias = response.data;
           this.endCharge = false;
@@ -218,7 +216,7 @@ export default {
       }
       // Modify (PUT)
       axios
-        .put("http://localhost:3000/api/categoria/" + method, {
+        .put("/api/categoria/" + method, {
           id: this.editedIndex,
         })
         .then((response) => {
@@ -250,7 +248,7 @@ export default {
       if (this.editedIndex > -1) {
         // Modify (PUT)
         axios
-          .put("http://localhost:3000/api/categoria/update", {
+          .put("/api/categoria/update", {
             id: this.editedIndex,
             nombre: this.editedItem.nombre,
             descripcion: this.editedItem.descripcion,
@@ -264,7 +262,7 @@ export default {
       } else {
         // Add (POST)
         axios
-          .post("http://localhost:3000/api/categoria/add", {
+          .post("/api/categoria/add", {
             nombre: this.editedItem.nombre,
             descripcion: this.editedItem.descripcion,
           })

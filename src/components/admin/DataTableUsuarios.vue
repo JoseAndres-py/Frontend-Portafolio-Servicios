@@ -149,8 +149,6 @@
   </v-main>
 </template>
 <script>
-import axios from "axios";
-import Axios from "axios";
 
 export default {
   data: () => ({
@@ -217,7 +215,7 @@ export default {
     },
     list() {
       axios
-        .get("http://localhost:3000/api/usuario/list")
+        .get("/api/usuario/list")
         .then((response) => {
           this.usuarios = response.data;
           this.endCharge = false;
@@ -247,7 +245,7 @@ export default {
       }
       // Modify (PUT)
       axios
-        .put("http://localhost:3000/api/usuario/" + method, {
+        .put("/api/usuario/" + method, {
           id: this.editedIndex,
         })
         .then((response) => {
@@ -281,7 +279,7 @@ export default {
       if (this.editedIndex > -1) {
         // Modify (PUT)
         axios
-          .put("http://localhost:3000/api/usuario/update", {
+          .put("/api/usuario/update", {
             id: this.editedIndex,
             name: this.editedItem.name,
             email: this.editedItem.email,
@@ -296,7 +294,7 @@ export default {
       } else {
         // Add (POST)
         axios
-          .post("http://localhost:3000/api/usuario/add", {
+          .post("/api/usuario/add", {
             name: this.editedItem.name,
             email: this.editedItem.email,
             password: this.newPassword,
