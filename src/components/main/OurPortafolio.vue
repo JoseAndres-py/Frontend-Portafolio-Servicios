@@ -97,4 +97,8 @@ export default {
 </script>
 
 <style scoped>
+
+@media screen and (min-width: 0px) and (max-width: 400px) {
+  .mu-filter-item-content>p { display: none; }  /* show it on small screens */
+}
 </style>
